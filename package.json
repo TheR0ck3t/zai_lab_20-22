@@ -4,8 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "generate-manifest": "node ./src/scripts/generateManifest.js",
+    "dev": "npm run generate-manifest && vite",
+    "build": "npm run generate-manifest && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -14,7 +15,10 @@
     "@fortawesome/free-regular-svg-icons": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "@react-pdf/renderer": "^4.3.0",
+    "papaparse": "^5.5.3",
     "react": "^19.1.0",
+    "react-csv": "^2.2.2",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.6.1"
   },

@@ -10,6 +10,7 @@ export default function Pages() {
       <Route path="/" element={<Intro />} />
       <Route path="/sets" element={<Sets />} />
       <Route path="/parts" element={<Parts />} />
+      <Route path="/parts/:id" element={<Parts />} />
       <Route path="/help" element={<Help />} />
       {/* więcej tras tutaj */}
     </Routes>
