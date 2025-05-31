@@ -56,6 +56,7 @@ zai_lab_20-22/
 ### 🖥️ Backend + 🌐 Frontend
 W głównym folderze projektu (`zai_lab_20-22/`)
 ```bash
+npm install
 npm run dev
 ```
 Uruchomi to wersję developerską frontendu oraz backend jednocześnie
