@@ -12,6 +12,14 @@
 
 ---
 
+### 📦 Wymagania
+
+- Node.js `v18+`
+- npm
+- (opcjonalnie) SQLite CLI
+
+---
+
 ## 📁 Struktura katalogów
 
 ```
@@ -41,22 +49,24 @@ zai_lab_20-22/
 └── README.md                   # 📘 Ten plik
 
 ```
+---
+## 📦 Instalacja
+
+W głównym folderze projektu (`zai_lab_20-22/`)
+
+```bash
+npm install
+```
+Zainstaluje to wszystkie potrzebne pakiety node
 
 ---
 
 ## 🚀 Uruchomienie projektu
 
-### 📦 Wymagania
 
-- Node.js `v18+`
-- npm
-- (opcjonalnie) SQLite CLI
-
----
 ### 🖥️ Backend + 🌐 Frontend
 W głównym folderze projektu (`zai_lab_20-22/`)
 ```bash
-npm install
 npm run dev
 ```
 Uruchomi to wersję developerską frontendu oraz backend jednocześnie
