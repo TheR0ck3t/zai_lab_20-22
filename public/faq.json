@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "question": "Jak dodać nowy zestaw klocków?",
+    "answer": "Aby dodać nowy zestaw, umieść plik CSV z częściami w katalogu 'media' w formacie [numer_zestawu]_parts.csv oraz obrazek zestawu jako [numer_zestawu]_preview.jpg lub [numer_zestawu]_preview.png. Jeśli posiadasz instrukcję, dodaj ją jako [numer_zestawu]_instruction.pdf."
+  },
+  {
+    "id": 2,
+    "question": "Jak działa funkcja zapisywania listy części?",
+    "answer": "Lista części jest automatycznie zapisywana w pamięci przeglądarki (WebStorage). Dzięki temu, nawet po zamknięciu przeglądarki, Twoje zmiany w ilości części będą zapamiętane. Możesz też ręcznie wyeksportować listę do pliku CSV klikając przycisk 'Pobierz CSV'."
+  },
+  {
+    "id": 3,
+    "question": "Jak generować dokumenty PDF z listą części?",
+    "answer": "Na stronie z częściami zestawu znajdziesz przycisk 'Generuj PDF'. Po kliknięciu w niego zostanie wygenerowany dokument PDF zawierający aktualną listę części z zestawu wraz z ilościami, cenami i wartościami."
+  },
+  {
+    "id": 4,
+    "question": "Jak modyfikować ilość części w zestawie?",
+    "answer": "W tabeli części każdy wiersz zawiera przyciski '+' i '-', które pozwalają zwiększać lub zmniejszać ilość danej części. System automatycznie przelicza wartość (ilość × cena) dla każdej części."
+  },
+  {
+    "id": 5,
+    "question": "Jakie formaty plików są obsługiwane przez aplikację?",
+    "answer": "Aplikacja obsługuje pliki CSV dla list części, pliki JPG i PNG dla obrazków zestawów oraz pliki PDF dla instrukcji budowy zestawów."
+  },
+  {
+    "id": 6,
+    "question": "Co oznacza numeracja przy nazwach części?",
+    "answer": "Każda część ma unikalny numer identyfikacyjny. Jest to standard stosowany w systemie LEGO, który pozwala jednoznacznie identyfikować każdy element niezależnie od jego koloru czy rozmiaru."
+  },
+  {
+    "id": 7,
+    "question": "Czy mogę eksportować dane do innych formatów niż CSV i PDF?",
+    "answer": "Aktualnie aplikacja wspiera tylko eksport do formatów CSV i PDF. Wsparcie dla dodatkowych formatów może zostać dodane w przyszłych aktualizacjach."
+  },
+  {
+    "id": 8,
+    "question": "Jak odzyskać dane po przypadkowym wyczyszczeniu przeglądarki?",
+    "answer": "Jeśli wyczyściłeś pamięć przeglądarki, dane zapisane w WebStorage zostały utracone. Możesz jednak zaimportować wcześniej wyeksportowany plik CSV, aby odzyskać listę części z ustawionymi ilościami."
+  },
+  {
+    "id": 9,
+    "question": "Czy aplikacja działa offline?",
+    "answer": "Tak, po pierwszym załadowaniu aplikacja może działać offline. Wszystkie dane są przechowywane lokalnie w przeglądarce. Jednakże, funkcje wymagające połączenia z internetem (jak wysyłanie formularza kontaktowego) nie będą działać w trybie offline."
+  },
+  {
+    "id": 10,
+    "question": "Jak skontaktować się z twórcami aplikacji?",
+    "answer": "Możesz skorzystać z formularza kontaktowego dostępnego w sekcji 'Pomoc'. Wypełnij wszystkie pola i kliknij przycisk 'Wyślij', a Twoja wiadomość zostanie przekazana do zespołu obsługi."
+  }
+]

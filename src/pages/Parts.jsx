@@ -5,13 +5,13 @@ import { useParts } from '../hooks/useParts';
 import '../assets/styles/Parts.css';
 
 export default function Parts() {
-  const { id } = useParams();
-  const { parts, loading, error, updatePart, getCSVData, clearStorage } = useParts(id);
+  const { id: paramId } = useParams();
+  const { id, parts, loading, error, updatePart, getCSVData, clearStorage } = useParts(paramId);
 
   if (!id) {
     return (
       <div className="error-message">
-        <h2>Brak identyfikatora zestawu</h2>
+        <h2>Brak identyfikatora zestawu!</h2>
         <p>Proszę wybrać zestaw z <Link to="/sets">listy</Link>.</p>
       </div>
     );
@@ -28,7 +28,7 @@ export default function Parts() {
   if (error) {
     return (
       <div className="error-message">
-        <h2>Błąd ładowania części</h2>
+        <h2>Błąd ładowania części!</h2>
         <p>{error.message}</p>
         <button onClick={() => window.location.reload()}>
           Spróbuj ponownie

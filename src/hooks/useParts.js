@@ -2,7 +2,10 @@ import { useState, useEffect } from 'react';
 import Papa from 'papaparse';
 import { parseCSVParts, getStorageKey, formatPartsForCSV } from '../utils/partsUtils';
 
-export function useParts(id) {
+export function useParts(paramId) {
+  // Centralne ustalanie ID z fallbackiem na localStorage
+  const id = paramId || localStorage.getItem('lastVisitedSet');
+  
   const [parts, setParts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -14,12 +17,15 @@ export function useParts(id) {
       return;
     }
 
+    // Zapisz aktualne ID jako ostatnio odwiedzane
+    localStorage.setItem('lastVisitedSet', id);
+
     const loadParts = async () => {
       try {
         setLoading(true);
         setError(null);
 
-        // Sprawdź localStorage
+        // Sprawdź localStorage dla części
         const saved = localStorage.getItem(getStorageKey(id));
         if (saved) {
           setParts(JSON.parse(saved));
@@ -57,7 +63,7 @@ export function useParts(id) {
     loadParts();
   }, [id]);
 
-  // Zapisywanie do localStorage
+  // Zapisywanie części do localStorage
   useEffect(() => {
     if (parts.length > 0 && id) {
       localStorage.setItem(getStorageKey(id), JSON.stringify(parts));
@@ -80,10 +86,12 @@ export function useParts(id) {
   const clearStorage = () => {
     if (id) {
       localStorage.removeItem(getStorageKey(id));
+      localStorage.removeItem('lastVisitedSet');
     }
   };
 
   return {
+    id, // Zwracamy używane ID
     parts,
     loading,
     error,
