@@ -18,9 +18,9 @@
 zai_lab_20-22/
 ├── public/                     # 📂 Statyczne zasoby dostępne bezpośrednio z URL
 │   ├── media/                  # 📦 Pliki CSV, obrazki i instrukcje PDF zestawów
-│   │   ├── *_parts.csv      # Lista części dla zestawu *
-│   │   ├── *_preview.jpg    # Obrazek zestawu *
-│   │   ├── *_manual.pdf     # Instrukcja zestawu *
+│   │   ├── *_parts.csv         # Lista części dla zestawu *
+│   │   ├── *_preview.jpg       # Obrazek zestawu *
+│   │   ├── *_manual.pdf        # Instrukcja zestawu *
 │   │   └── manifest.json +     # Automatycznie generowany plik grupujące pliki dla danych zestawów bazując na prefikse z numerem zestawu
 │   └── faq.json                # Plik Json z FAQ
 ├── src/
@@ -33,8 +33,8 @@ zai_lab_20-22/
 │   │   └── fonts/              # Własne czcionki (np. Lato-Regular.ttf)
 │   ├── hooks/                  # 🪝 Custom hooki (np. useParts.js do logiki tabeli)
 │   ├── App.jsx                 # Główna aplikacja React
-│   ├── Pages.jsx              # Routing aplikacji (React Router)
-│   └── main.jsx               # Entry point – punkt startowy React/Vite
+│   ├── Pages.jsx               # Routing aplikacji (React Router)
+│   └── main.jsx                # Entry point – punkt startowy React/Vite
 ├── .env                        # 🔐 Zmienne środowiskowe (VITE_API_URL)
 ├── package.json                # 📦 Zarządzanie zależnościami (npm)
 ├── vite.config.js              # ⚙️ Konfiguracja Vite (jeśli istnieje)
