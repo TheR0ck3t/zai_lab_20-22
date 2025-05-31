@@ -21,7 +21,7 @@ zai_lab_20-22/
 │   │   ├── *_parts.csv         # Lista części dla zestawu *
 │   │   ├── *_preview.jpg       # Obrazek zestawu *
 │   │   ├── *_manual.pdf        # Instrukcja zestawu *
-│   │   └── manifest.json +     # Automatycznie generowany plik grupujące pliki dla danych zestawów bazując na prefikse z numerem zestawu
+│   │   └── manifest.json       # Automatycznie generowany plik grupujące pliki dla danych zestawów bazując na prefikse z numerem zestawu
 │   └── faq.json                # Plik Json z FAQ
 ├── src/
 │   ├── server.js               # 🖥️ Backend Express + SQLite
